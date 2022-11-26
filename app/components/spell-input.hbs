@@ -1,0 +1,16 @@
+<center>
+    <div id="clickable">
+        <div 
+            id="myEditor"
+            contenteditable={{true}} 
+            spellcheck={{false}} 
+        >
+        </div>
+    </div>
+    <button {{action 'inputCallback'}}>Spell check</button>
+</center>
+
+<RightClick 
+    @suggestionMap={{this.suggestionMap}}
+/>
+

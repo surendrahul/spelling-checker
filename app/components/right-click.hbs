@@ -1,0 +1,13 @@
+<div {{did-insert this.initRightClick}}>
+    <ul id="menu">
+        {{#each suggestionItems as |item|}}
+            <li 
+                class="menu-item"
+                {{on "click" (fn this.replaceText item)}}
+            >
+            {{item}}
+            </li>
+        {{/each}}
+    </ul>
+    <div id="out-click"></div>
+</div>
